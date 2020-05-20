@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>든든한 냉장고 정리 패키지</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+	<meta name="description" content="자취생의 작은 냉장고를 효율적으로 정리하고, 청소할 수 있는 냉장고 정리 패키지 입니다. 나만의 냉장고를 꾸려서 요리의 즐거움도 느끼고 배달 음식으로 인한 가벼운 지갑을 지켜주세요.">
+	<meta property="og:type" content="website">
+	
+	
+	<meta property="og:title" content="든든한 냉장고 정리 패키지">
+	<meta property="og:description" content="자취생의 작은 냉장고를 효율적으로 정리하고, 청소할 수 있는 냉장고 정리 패키지 입니다. 나만의 냉장고를 꾸려서 요리의 즐거움도 느끼고 배달 음식으로 인한 가벼운 지갑을 지켜주세요.">
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; scroll-behavior: smooth;}
+		.serif{font-family: 'Noto Serif KR', serif;}
+		body,h1,h2,img,p,div,ul,li{margin:0; padding: 0;}
+		section{margin: auto; display: flex; justify-content: center;}
+		h1{font-weight: 300; word-spacing: -1px; letter-spacing: -2px; font-size: 4em;text-shadow: 0px 0px 10px white;} 
+		h2{font-weight: 600; word-spacing: -1px; letter-spacing: -2px; font-size: 3em;}
+		p{font-weight: 400; word-spacing: -1px; letter-spacing: -1.5px; font-size: 1.5em;color: #3b1d15}
+		img{display: block; width:100%;}
+		.center{display: block; margin-right: auto;margin-left: auto;}
+		.round{border-radius:50%; margin-bottom: 15px;}
+
+		nav{margin:0; top:0;z-index: 20; position: sticky;}
+		.sticky{position: sticky;}
+		nav ul{margin:auto; float: right;}
+		nav ul li{list-style-type: none; width:23.5%; height: 44px; line-height: 44px; text-align: center;}
+		nav ul li a{display: block; line-height: 44px; text-align: center; text-decoration: none; color:#3b1d15; font-weight: 500;border-radius:50px;}
+		nav ul li a:hover{background:none; transition: all 0.5s; color: #eb9f8f;}
+		nav .logo{height: 44px; line-height: 44px; width: 200px; float: left; text-align: center;}
+		nav div a{display: block; line-height: 44px; text-align: center; text-decoration: none; color:#3b1d15; font-weight: 500;}
+		.navbar{height: 44px; background: white;}
+		
+
+		header{height: 800px; padding: 1px;}
+		header p{width:500px; margin:auto; padding-top: 30px;}
+		footer{height:800px; padding:1px;}
+		footer p{width:500px; margin:auto;margin-top: 50px; padding-top: 30px;color: white; font-size:1em;  font-weight: 300}
+		.abs{position: absolute; height: 400px; widows: 100%; z-index: 1; opacity: 0.4; background: black;}
+		.bg-header{background: url(./img/img1.jpg); background-size: cover; background-attachment: fixed;}
+		.bg-header2{background: url(./img/img9.jpg); background-size: cover; background-attachment: fixed;}
+		.bg-header3{background: url(./img/img19.jpg); background-size: cover; background-attachment: fixed;}
+		.bg-header4{background: url(./img/img24.jpg); background-size: cover; background-attachment: fixed;}
+		/*.bg-section{background: url(./img/img9.jpg); background-size: cover; background-attachment: fixed;height: 550px;}*/
+		.bg-fixed{background-attachment: fixed;}
+		.bg-pink{background:rgba(255, 240, 231, 0.8)}
+
+
+		.text-center{text-align: center;}
+		.text-right{text-align: right;}
+		.text-left{text-align: left;}
+		
+
+		.text-white{color: white;}
+		.text-skyblue{color:rgba(22, 64, 202, 0.8)}
+		.text-pink{color:#eb9f8f;}
+
+		.p-3em-bold{font-size: 3.7em; font-weight: 700;}
+		.p-2em-bold{font-size:2.3em; font-weight: 900;}
+		.p-2em{font-size:2.3em; font-weight: 500;letter-spacing: -2px;}
+		.p-1em{font-size: 1.0em; font-weight: 500; letter-spacing: 1px;}
+		.p-1em2{font-size: 1.5em; font-weight: 900; letter-spacing: 1px;font-family: 'Noto Serif KR', serif;color: #e59f8f;}
+		.p-3em{font-size: 2em;}
+		.font-size-3em{font-size: 4.5em; font-weight: 400;}
+
+
+		.word-break{word-break: keep-all;}
+		.margin-bottom{margin-bottom: 200px;}
+		.margin-bottom2{margin-bottom: 50px;}
+		.margin-top{margin-top: 350px;}
+		.weight{width: 1920px}
+
+		.row{width: 1500px; margin:auto; position: relative; z-index: 2; display: flex; padding : 0px 10px; margin-top:0px; margin-bottom:10px;}
+		.row div{padding: 8px}
+		.flexbox{display: flex;}
+		.col-1{width: 16.66%;}
+		.col-2{width: 33.33%;}
+		.col-3{width: 50%;}
+		.col-4{width: 66.66%;}
+		.col-5{width: 83.32%;}
+		.col-6{width: 100%;}
+
+		.dot{height: 20px;width: 20px;background-color:white;border-radius: 50%;display: inline-block;}
+
+		#abs1{position: absolute; width: 700px; left: 200px}
+		#abs2{position: absolute; width: 900px; right: 0px; top:1000px;}
+		#abs3{position: absolute; width: 700px; left: 100px; top:1900px;}
+		#abs4{position: absolute; width: 1500px; left:0px; top:2900px}
+		#abs5{position: absolute; width: 600px; right: 150px;top:30px;}
+		#abs6{position: absolute; width: 990px; left:calc(50% - 495px);top:30px;}
+		#abs7{position: absolute; width: 500px; left:calc(50% - 250px);top:30px;}
+		#abs8{position: absolute; width: 800px; right: 100px;top:550px;}
+
+
+		.h-6000{height:4500px}
+		.h-400{height:400px}
+		.h-500{height:500px}
+		.h-600{height:600px;}
+		.h-680{height:680px;}
+		.h-900{height:900px}
+
+	</style>
+
+</head>
+
+<body>
+	<nav>
+		<div class="navbar">
+			<div class="logo"><a href="#home">home</a></div>
+		</div>
+	</nav>
+
+	<header id="home" class="bg-header text-center">
+		
+		<div class="row">
+			<div class="col-6">
+				<p>자취생은 배달의 민족</p>
+				<h1><strong>가벼운 지갑사정</strong><br>원인은<span style="color:rgba(255, 10, 8, 0.4)"><strong>냉장고 상태?</strong></span></h1>
+			</div>
+		</div>
+	</header>
+	<nav>
+		
+			<ul class="col-3 flexbox">
+				<li><a href="#A">패키지구성</a></li>
+				<li><a href="#B">소분용기</a></li>
+				<li><a href="#C">청소용품</a></li>
+				<li><a href="https://docs.google.com/spreadsheets/d/1FaD8EVbIt-sNqWtWy1yHWA3NgVUymDC0DvPQH-l7UH8/edit#gid=0" target="new">기타상품</a></li>
+			</ul>
+		
+	</nav>
+	<section class="margin-bottom margin-top">
+		<div class="row">
+			<div class="col-1"></div><div class="col-2"><p class="p-3em">지출의 <strong>70% 이상이 식비,</strong> 금액도 어마어마<br><strong>해먹는건 좀...!</strong><br>도대체 <strong>왜?</strong></p></div>
+			<div class="col-2 text-right"><p class="p-3em">너~무 작아<br><strong>정리가 안되는 냉장고.</strong><br><strong>무슨재료</strong>가 있는지도<br><strong>어디에 있는지</strong>도 파악이 안되고<br><strong>손 대기도 싫어</strong><br>배달 음식을 외치게 하는</p></div><div class="col-1"></div>
+		</div>		
+	</section>
+	<section class="margin-bottom">
+			<p class="p-3em-bold text-center text-white"> <span style="background-color:#034f8f">당신의 냉장고!</span></p>
+	</section>
+	<section class="margin-bottom">
+			<p class="serif p-2em text-center">어떻게, 해결 안되나요?</p>
+	</section>
+	<section class="text-center margin-bottom2">
+		<h2 class="font-size-3em"><span style="color:rgba(255, 10, 8, 0.4)"><strong>든든-</strong></span>한<br><span style="color:rgba(255, 10, 8, 0.4)"><strong>냉장고 정리</strong></span><br>패키지</h2>
+	</section>
+
+
+	<section id="A">
+			<div><img src="./img/img2.jpg"></div>
+	</section>
+    <section class="bg-pink text-pink">     
+        <div class="row">
+			<div class="col-6 text-center p-2em-bold serif"><span class="dot"></span><br>이벤트 한정 판매가<br>19,900원</div></div>
+	</section>
+	<section class="bg-pink text-pink">
+		<div class="row">
+			<div class="col-2"></div><div class="col-1">
+		<p class="text-center p-1em"><img src="./img/img3.jpg" style="width:200px" class="center round"><b>1호(300ml, 3ea)</b><br>13.8 × 10 × 3.8cm</p></div>
+		<div class="col-1">
+		<p class="text-center p-1em"><img src="./img/img4.jpg" style="width:200px" class="center round"><b>2호(450ml, 3ea)</b><br>13.8 × 10 × 5.5cm</p></div><div class="col-2"></div>
+		</div>
+	</section>
+	<section class="bg-pink text-pink">
+		<div class="row">
+			<div class="col-2"></div><div class="col-1">
+		<p class="text-center p-1em"><img src="./img/img5.jpg" style="width:200px" class="center round"><b>3호(650ml, 3ea)</b><br>20.6 × 13.8 × 3.8cm</p></div>
+		<div class="col-1">
+		<p class="text-center p-1em"><img src="./img/img6.jpg" style="width:200px" class="center round"><b>4호(1000ml, 2ea)</b><br>20.6 × 13.8 × 5.5cm</p></div><div class="col-2"></div>
+		</div>
+	</section>
+	<section class="bg-pink text-pink">
+		<div class="row" style="margin-bottom: 100px">
+			<div class="col-2"></div><div class="col-1">
+		<p class="text-center p-1em"><img src="./img/img7.jpg" style="width:200px" class="center round"><b>베이킹소다 워터(500ml)<br>구연산 워터(500ml)</b></p></div>
+		<div class="col-1">
+		<p class="text-center p-1em"><img src="./img/img8.jpg" style="width:200px" class="center round"><b>수세미(2ea)</b></p></div><div class="col-2"></div>
+		</div>
+	</section>
+	<header id="B" class="bg-header2 margin-top margin-bottom"></header>
+	<section>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">小分 : 적게 나누어 담다</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-4"><p>냉장, 냉동실에 자유롭게 사용 가능한 소분용기!<br>육류, 어류, 김치, 견과류, 젓갈 등<br>내가 원하는 만큼 쓰고, 소분 용기에 담아 냉장고에 보관하세요!<br>진공 밀폐로 식품의 변질 없이 신선도를 장기간 유지시켜 줍니다.</p></div>
+		</div>
+	</section>
+	<section class="margin-bottom">
+		<div class="row">
+			<div class="col-6 h-6000">
+				<img src="./img/img10.jpg" id="abs1">
+				<img src="./img/img11.jpg" id="abs2">
+				<img src="./img/img12.jpg" id="abs3">
+				<img src="./img/img13.jpg" id="abs4">
+			</div>
+		</div>
+	</section>
+	<section class="bg-pink">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">Point 1<br>결착이 잘 되는<br>적층 시스템 디자인</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="margin-bottom">
+		<div class="row">
+			<div class="col-6 h-680">
+				<img src="./img/img14.jpg" id="abs5">
+			</div>
+		</div>
+	</section>
+	<section class="bg-pink">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">Point 2<br>한눈에 보이는<br>투명함</h2>
+			</div>
+		</div>
+	</section>
+	
+	<section class="margin-bottom">
+		<div class="row">
+			<div class="col-6 h-500">
+				<img src="./img/img15.jpg" id="abs6">
+			</div>
+		</div>
+	</section>
+	<section class="bg-pink">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">Point 3<br>샐 걱정 없는<br>견고함</h2>
+			</div>
+		</div>
+	</section>
+	
+	<section class="margin-bottom">
+		<div class="row">
+			<div class="col-6 h-600">
+				<img src="./img/img16.jpg" id="abs7">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row flexbox">
+			<div class="col-1"></div>
+			<div class="col-4"><img src="./img/img17.jpg"></div><div class="col-1"></div>
+	</section>
+	<section class="bg-pink text-pink">
+			<div><img src="./img/img18.jpg"></div>
+	</section>
+    <section class="bg-pink text-pink">     
+        <div class="row" style="margin-bottom: 50px">
+			<div class="col-6 text-center p-2em-bold serif"><span class="dot"></span><br>소분용기 특징</div></div>
+	</section>
+	<section class="bg-pink text-pink">
+		<div class="row">
+			<div class="col-2"></div><div class="col-1">
+		<img src="./img/icon1.png" style="width:180px" class="center"></div>
+		<div class="col-2" style="margin-top: 20px">
+		<p class="p-1em2" style="margin-bottom: 10px">프리미엄 원료</p><p class="p-1em">뚜껑은 PP+엘라스토마 혼합 소재로<br>내열성이 우수하고 유연합니다.<br>몸통은 유해물질 걱정 없는 안전한 SAN소재로<br>잘 깨지지 않고 유리처럼 투명합니다.</p></div><div class="col-1"></div>
+		</div>
+	</section>
+	<section class="bg-pink text-pink">
+		<div class="row">
+			<div class="col-2"></div><div class="col-1">
+		<img src="./img/icon2.png" style="width:180px" class="center"></div>
+		<div class="col-2" style="margin-top: 20px">
+		<p class="p-1em2" style="margin-bottom: 10px">전자레인지 사용가능</p><p class="p-1em">용기의 무게가 가벼워 다루기 쉬우며,<br>전자레인지와 세척기 사용이 가능합니다.<br>
+		- 2-3분 이내로 사용하세요.<br>
+		- 뚜껑은 개폐하여 분리 후 사용하세요.</p></div><div class="col-1"></div>
+		</div>
+	</section>
+	<section class="bg-pink text-pink margin-bottom">
+		<div class="row" style="margin-bottom: 100px">
+			<div class="col-2"></div><div class="col-1">
+		<img src="./img/icon3.png" style="width:170px" class="center"></div>
+		<div class="col-2" style="margin-top: 20px">
+		<p class="p-1em2" style="margin-bottom: 10px">영하 30도 이하 보관</p><p class="p-1em">영하 30도에도 보관이 가능하며<br>냉동실에서 꺼내 바로 뚜껑을 열어도<br>순조롭게 개폐가 가능합니다.</div><div class="col-1"></div>
+		</div>
+	</section>
+	<header id="C" class="bg-header3 margin-top margin-bottom"></header>
+	<section>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">냉장고를 청결하게</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-4"><p>각종 음식물로 인한 얼룩, 묵은때, 곰팡이, 눈에 보이지 않는 세균까지<br>우리 가족의 건강과 냉장고의 청결함을 위해<br>사용이 간편한 워터타입의 베이킹소다와 구연산을 사용하세요.</p></div>
+		</div>
+	</section>
+	<section class="margin-bottom">
+		<div class="row">
+			<div class="col-6 h-900">
+				<img src="./img/img20.jpg" id="abs1">
+				<img src="./img/img21.jpg" id="abs8">
+			</div>
+		</div>
+	</section>
+	<section class="margin-top">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">1. 베이킹소다 워터</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-4"><p>베이킹소다 워터 세정제를 얼룩자리에 뿌려 주고<br>행주 또는 수세미로 구석구석 닦아줍니다.<br>냉장고 속 묵은때 제거와 음식 냄새까지 한번에 관리가 가능합나다.</p></div>
+		</div>
+	</section>
+	<section>
+		<div class="row flexbox">
+			<div class="col-1"></div>
+			<div class="col-4"><img src="./img/img22.jpg"></div><div class="col-1"></div>
+		</div>
+	</section>
+	<section class="margin-bottom bg-pink">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5"><p><b>Q. 베이킹 소다 가루랑 쓰임새가 같나요?</b><br>“네! 베이킹 소다의 워터 타입 입니다.”</b><br>베이킹 소다의 활용법대로 사용해 주시면 됩니다.<br>일일이 물에 희석할 필요가 없어 더 쉽게 쓸 수 있습니다.<br>안전한 다목적 세정 원료 베이킹 소다와 맑은 물이 만난<br>워터타입으로써 필요할 때 마다 간편하게 칙칙 뿌려 쓰면 됩니다.</p></div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5">
+				<h2 class="text-pink serif p-3em-bold">2. 구연산 워터</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-4"><p>눈에 보이는 때만 닦는다고 해서 안에 있는 균까지 관리되는 것은 아니지요.<br>가족들의 건강을 위해서 냉장고 내부도 관리해야 할 때입니다.<br>구연산 워터 다목적 세정제를 손이 닿는 물건 혹은 바닥에 뿌려준 후<br>잔여물이 남지 않도록 구석구석 잘 닦아주세요.</p></div>
+		</div>
+	</section>
+	<section>
+		<div class="row flexbox">
+			<div class="col-1"></div>
+			<div class="col-4"><img src="./img/img23.jpg"></div><div class="col-1"></div>
+		</div>
+	</section>
+	<section class="bg-pink">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-5"><p><b>Q. 구연산 가루랑 쓰임새가 같나요?</b><br>“네! 구연산의 워터 타입 입니다.”</b><br>구연산의 활용법대로 사용해 주시면 됩니다.<br>일일이 물에 희석할 필요가 없어 더 쉽게 쓸 수 있습니다.<br>식품첨가물 안심원료 구연산과 맑은 물이 만난 워터타입으로써<br>생활 소독 세정이 필요한 곳곳에 간편하게 활용해주세요.</p></div>
+		</div>
+	</section>
+
+	<footer class="bg-header4 margin-top">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-1"><p>한경대학교<br>디자인학과<br>디지털퍼블리싱</p></div>
+			<div class="col-1"><p>영상디자인<br>미디어인터렉션<br>디자인사<br>창의창업스튜디오</p></div>
+			<div class="col-1"><p>2017286045<br>임민희</p></div>
+			<div class="col-1"><p>냉장고정리<br>패키지<br>2020_05</p></div>
+			<div class="col-1"></div>
+		</div>
+	</footer>
+</body>
+</html>
